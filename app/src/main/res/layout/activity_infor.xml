@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Activity.Infor_Activity">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/purple_Dark"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:tint="@color/white"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/arrow"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/dark_violet"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/view1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng kí thành viên mới"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <RelativeLayout
+        android:id="@+id/view3"
+        android:layout_width="350dp"
+        android:layout_height="530dp"
+        android:background="@drawable/white_background4"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/view1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thông tin cá nhân"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/title"
+            android:text="Để đảm bảo quyền lợi cá nhân, khách hàng vui lòng điền chính xác thông tin cá nhân"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="330dp"
+            android:layout_height="2dp"
+            android:background="@color/purple_Dark"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/comment"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/Tname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Họ và tên"
+            android:textSize="17sp"
+            android:layout_below="@+id/line"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/Ename"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:hint="Nhập họ và tên"
+            android:textSize="15sp"
+            android:layout_below="@+id/Tname"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/Tnational_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số căn cước công dân"
+            android:textSize="17sp"
+            android:layout_below="@+id/Ename"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/Enational_ID"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:hint="Số giấy tờ"
+            android:textSize="15sp"
+            android:layout_below="@+id/Tnational_ID"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/Temail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="17sp"
+            android:layout_below="@+id/Enational_ID"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/Eemail"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:hint="Nhập email"
+            android:textSize="15sp"
+            android:layout_below="@+id/Temail"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/Tbirth_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày sinh"
+            android:textSize="17sp"
+            android:layout_below="@+id/Eemail"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/Ebirth_day"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:hint="MM/DD/YYYY"
+            android:textSize="15sp"
+            android:inputType="date"
+            android:layout_below="@+id/Tbirth_day"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/Tgender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giới tính"
+            android:textSize="17sp"
+            android:layout_below="@+id/Ebirth_day"
+            android:layout_marginTop="10dp"/>
+
+        <RadioButton
+            android:id="@+id/Rbtn_nam"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/Tgender"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+
+
+        <TextView
+            android:id="@+id/Tnam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/Rbtn_nam"
+            android:layout_below="@+id/Tgender"
+            android:text="Nam"
+            android:textSize="17sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="15dp"
+            />
+
+        <RadioButton
+            android:id="@+id/Rbtn_nu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/Tgender"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="100dp"
+            android:layout_toEndOf="@+id/Tnam"
+            android:padding="10dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/Rbtn_nu"
+            android:layout_below="@+id/Tgender"
+            android:text="Nữ"
+            android:textSize="17sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="15dp"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="44dp"
+        android:text="Xác nhận"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/view1"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@id/view1"
+        app:layout_constraintTop_toBottomOf="@id/view3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

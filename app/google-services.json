@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "416116649324",
+    "project_id": "cham-soc-khach-hang-c4e8a",
+    "storage_bucket": "cham-soc-khach-hang-c4e8a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416116649324:android:21f3e6c9fbfcb8e92d9749",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQtTGUN5PZ1I-JsA0o4oaMBsVs2b48whU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
